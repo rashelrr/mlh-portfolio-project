@@ -1,13 +1,10 @@
+import os
 from flask import Blueprint, render_template
+from dotenv import load_dotenv
 
-views = Blueprint(__name__, "views")
+load_dotenv()
+views = Blueprint('views', __name__, template_folder='templates')
 
 @views.route("/")
-def home():
-    return render_template("index.html")
-
-@views.route("hobbies")
-def hobbies():
-    return render_template("index.html")
-
-
+def index():
+    return render_template('index.html', url=os.getenv("URL"))
