@@ -1,11 +1,5 @@
-import os
-from flask import Flask, render_template, request
-from dotenv import load_dotenv
+from flask import Flask
+from app.views import views
 
-load_dotenv()
 app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
+app.register_blueprint(views)
