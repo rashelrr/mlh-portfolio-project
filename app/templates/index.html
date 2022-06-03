@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Student</title>
     <link rel="stylesheet" href="../static/styles/main.css">
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+    <!-- Name & Photo -->
+      <div id="bigimg">
+        <div style="margin-top:130px;" class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                    <img class="roundedimg" src="../static/img/logo.jpg" />
+                    <h1 style="color:black;">Student</h1>
+                    <p style="color:#272727; font-size: 17px;">Computer Science Student at University Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+        $("#bigimg").css({
+            "height": $(window).height() + "px"
+        });
+    });
+    </script>
+  
     <!-- Work experiences -->
     <!-- Source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
     <div class="slideshow-container">
@@ -61,5 +87,3 @@
 
 </body>
 </html>
-
-

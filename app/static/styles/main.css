@@ -167,4 +167,17 @@ body {
 .active, .dot:hover {
     background-color: #717171;
 }
-=======
+
+#bigimg {
+    width: 100%;
+    background-size: cover !important;
+    margin: 0px auto;
+    overflow: hidden !important;
+    background: url('../img/otters.jpg');
+    margin-top: -1px !important;
+}
+
+.roundedimg {
+    width: 25%;
+    border-radius: 100px;
+}
