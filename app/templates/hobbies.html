@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+</head>
+<body>
+    <!-- Hobbies -->
+    <div class="slideshow-container" style="padding:0;background-color:transparent;">
+
+        <div class="mySlides fade" style="padding:0;">
+            <img class="hobbies" style="overflow:hidden;width:100%;" src="../static/img/gym.jpg">
+        </div>
+    
+        <div class="mySlides fade" style="padding:0;">
+            <img class="hobbies" style="overflow:hidden;width:100%;" src="../static/img/videogames.jpeg">
+        </div>
+
+        <div class="mySlides fade" style="padding:0;">
+            <img class="hobbies" style="overflow:hidden;width:100%;"  src="../static/img/garden.jpeg">
+        </div>
+    
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dots -->
+    <div class="dot-container" style="background-color:transparent;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="../static/scripts/slides.js"></script>
+</body>
+</html>
