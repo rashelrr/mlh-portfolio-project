@@ -16,20 +16,37 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
                     <img class="roundedimg" src="../static/img/logo.jpg" />
-                    <h1 style="color:black;">Student</h1>
+                    <h1 class="animated fadeInDown" style="color:black;">Student</h1>
                     <p style="color:#272727; font-size: 17px;">Computer Science Student at University Name</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        $(document).ready(function() {
-        $("#bigimg").css({
-            "height": $(window).height() + "px"
-        });
-    });
-    </script>
+    <!-- About me -->
+    <div id="aboutme">
+        <div class="container">
+            <div style=" overflow:hidden;margin:80px 0px 80px 0px;" class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="imgfade" style="overflow:hidden;width:114%;" src="../static/img/logo.jpg">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1 col-lg-7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 style="overflow:hidden;margin:10px 0px 30px 0px;font-weight: 560; font-size:25px;">HI, I'M STUDENT</h4>
+                            <p style="font-size: 16px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </p>
+                            <p style="font-size: 16px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   
     <!-- Work experiences -->
     <!-- Source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
@@ -84,6 +101,18 @@
     </div>
 
     <script src="../static/scripts/slides.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("#bigimg").css({
+            "height": $(window).height() + "px"
+        });
+    });
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > $(window).height() - 350) {
+            $('.imgfade').addClass("animated fadeInDown");
+        }
+    });
+    </script>
 </body>
 </html>
