@@ -23,6 +23,55 @@
         </div>
     </div>
 
+    <!-- Menu bar -->
+    <section class="menu">
+        <nav style="margin:0px; border-radius: 0px;" class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="font-size:23px;padding-left:40px;" class="navbar-brand">Student Name</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection1" href="#">Home</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection2" href="#">About</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection3" href="#">Experience</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Hobbies</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="menu2">
+        <nav style="margin:0px; border-radius: 0px;" class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="font-size:23px;padding-left:40px;" class="navbar-brand">Student Name</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection4" href="#">Home</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection5" href="#">About</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection6" href="#">Experience</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Hobbies</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
     <!-- About me -->
     <div id="aboutme">
         <div class="container">
@@ -50,7 +99,7 @@
   
     <!-- Work experiences -->
     <!-- Source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
-    <div class="slideshow-container">
+    <div id = "experience" class="slideshow-container">
 
         <div class="mySlides">
             <h2>Jobtitle 1</h2>
@@ -112,7 +161,49 @@
         if ($(this).scrollTop() > $(window).height() - 350) {
             $('.imgfade').addClass("animated fadeInDown");
         }
+
+        if ($(this).scrollTop() > $(window).height()) {
+            $('.menu2').addClass("disp");
+        } else {
+            $('.menu2').removeClass("disp");
+        }
     });
+
+    $('#redirection1').click(function() {
+            $('body, html').animate({
+                scrollTop: $('#bigimg').offset().top
+            }, 800);
+        });
+    
+    $('#redirection2').click(function() {
+            $('body, html').animate({
+                scrollTop: $('#aboutme').offset().top
+            }, 800);
+        });
+    
+    $('#redirection3').click(function() {
+            $('body, html').animate({
+                scrollTop: $('#experience').offset().top
+            }, 800);
+        });
+    
+    $('#redirection4').click(function() {
+        $('body, html').animate({
+            scrollTop: $('#bigimg').offset().top
+        }, 800);
+    });
+    
+    $('#redirection5').click(function() {
+            $('body, html').animate({
+                scrollTop: $('#aboutme').offset().top
+            }, 800);
+        });
+    
+    $('#redirection6').click(function() {
+            $('body, html').animate({
+                scrollTop: $('#experience').offset().top
+            }, 800);
+        });
     </script>
 </body>
 </html>

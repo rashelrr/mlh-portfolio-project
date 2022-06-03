@@ -223,3 +223,16 @@ body {
     animation-name: fadeInDown;
     display:block !important;
 }
+
+.menu2{
+    display: none;
+        position:fixed !important;
+    top:0 !important;
+    left:0 !important;
+    width:100%;
+    z-index:20;
+}
+
+.disp{
+    display: block;
+}
