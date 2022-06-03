@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Student</title>
+    <link rel="stylesheet" href="../static/styles/main.css">
+  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <title>Student</title>
 </head>
 <body>
-    <div id="bigimg">
+    <!-- Name & Photo -->
+      <div id="bigimg">
         <div style="margin-top:130px;" class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
@@ -27,4 +30,60 @@
         });
     });
     </script>
+  
+    <!-- Work experiences -->
+    <!-- Source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <h2>Jobtitle 1</h2>
+            <h3>Company Name</h3>
+            <p><i>From Date to Date</i></p>
+            <p>Location</p>
+            <ul>
+                <li>responsibilties</li>
+                <li>responsibilties</li>
+                <li>responsibilties</li>
+            </ul>
+        </div>
+    
+        <div class="mySlides">
+            <h2>Jobtitle 2</h2>
+            <h3>Company Name</h3>
+            <p><i>From Date to Date</i></p>
+            <p>Location</p>
+            <ul>
+                <li>responsibilties</li>
+                <li>responsibilties</li>
+                <li>responsibilties</li>
+            </ul>
+        </div>
+
+        <div class="mySlides">
+            <h2>Jobtitle 3</h2>
+            <h3>Company Name</h3>
+            <p><i>From Date to Date</i></p>
+            <p>Location</p>
+            <ul>
+                <li>responsibilties</li>
+                <li>responsibilties</li>
+                <li>responsibilties</li>
+            </ul>
+        </div>
+    
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dots -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="../static/scripts/slides.js"></script>
+
 </body>
+</html>
