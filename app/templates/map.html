@@ -23,6 +23,28 @@
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
+
+        var marker = L.marker([40.71277, -74.00597]).addTo(map);
+        marker.bindPopup("<b>New York, NY</b><br>Came here for university");
+
+        var marker = L.marker([34.052235, -118.243683]).addTo(map);
+        marker.bindPopup("<b>LA, California</b><br>Went to Venice Beach and Hollywood last summer");
+
+        var marker = L.marker([-0.2201641, -78.5123274]).addTo(map);
+        marker.bindPopup("<b>Quito, Ecuador</b><br>Stood on the equator!");
+
+        var marker = L.marker([37.5666791, 126.9782914]).addTo(map);
+        marker.bindPopup("<b>Seoul, South Korea</b><br>Saw BTS at a concert!");
+
+        var marker = L.marker([-6.1791181, 35.7468174]).addTo(map);
+        marker.bindPopup("<b>Dodoma, Tanzania</b><br>Visited one of my friends");
+
+        var marker = L.marker([-33.8698439, 151.2082848]).addTo(map);
+        marker.bindPopup("<b>Sydney, Australia</b><br>Saw the cutest kangaroos and koalas here");
+
+        map.setView([0, 0], 1.5);
+
+
     </script>
 
 </body>
