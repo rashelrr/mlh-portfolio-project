@@ -278,3 +278,10 @@ body {
 .disp{
     display: block;
 }
+
+/* Map */
+#map { 
+    height: 500px; 
+    width: 75%;
+    margin: auto;
+}
