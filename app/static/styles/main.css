@@ -275,6 +275,18 @@ body {
     z-index:20;
 }
 
-.disp{
+.disp {
     display: block;
+}
+
+.contact {
+    margin: auto;
+    text-align: center;
+}
+
+.contactPic {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px; 
 }
