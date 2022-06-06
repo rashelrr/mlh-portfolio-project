@@ -305,6 +305,7 @@ body {
 .contact {
     margin: auto;
     text-align: center;
+    padding: 25px 25px 25px 25px;
 }
 
 .contactPic {
