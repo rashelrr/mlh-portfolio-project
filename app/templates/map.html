@@ -2,12 +2,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Places I've Visited</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin=""/>
 </head>
 <body>
+
+       <!-- Menu bar -->
+       <section class="menuHobbiesMap">
+        <nav style="margin:0px; border-radius: 0px;" class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="font-size:23px;padding-left:40px;" class="navbar-brand">{{name}}</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="spaceWords nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Experience</a></li>
+                        <li><a href="/">Education</a></li>
+                        <li><a href="{{ url_for('views.hobbies') }}">Hobbies</a></li>
+                        <li><a href="{{ url_for('views.map') }}">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
     <h1>Cool Places I've Been To</h1>
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
