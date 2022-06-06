@@ -61,3 +61,6 @@ You'll now be able to access the website at `localhost:5000` or `127.0.0.1:5000`
 
 ## Roadmap
 - Work more with the information, for example, use a database to store all portfolio information
+- Adding a page to display a user's projects
+- Creating more jinja templates
+
