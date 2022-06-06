@@ -165,6 +165,7 @@ body {
 /* Additional stuff for hobbies slideshow*/
 /* Fading animation */
 .fade {
+    opacity: 1;
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -174,7 +175,7 @@ body {
     to {opacity: 1}
 }
 
-.container {
+.containerhobbies {
     padding: 0;
     position: relative;
 }
@@ -199,7 +200,7 @@ body {
     text-align: center;
 }
 
-.container:hover .overlay {
+.containerhobbies:hover .overlay {
     opacity: 1;
 }
 
@@ -273,6 +274,19 @@ body {
     left:0 !important;
     width:100%;
     z-index:20;
+}
+
+.menuHobbiesMap{
+    display: block;
+    position:fixed !important;
+    top:0 !important;
+    left:0 !important;
+    width:100%;
+    z-index:20;
+}
+
+.spaceWords li{
+    font-size:18px;padding: 0px 20px 0px 20px;
 }
 
 .disp {
