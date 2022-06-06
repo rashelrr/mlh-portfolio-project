@@ -2,6 +2,12 @@
 
 Portfolio site built in Flask. This site will be the foundation for activities we do in the whole program.
 
+## Description
+
+This portfolio has an about me, education, work experience and contact section. The about me section allows you to enter any information you wish to provide about yourself. The education section displays a timeline of recent schools or colleges you have attended. The work experience section allows you to enter the latest projects or jobs in which you have participated. The contact section is for people to take action after viewing your portfolio.
+
+On the other hand, we have two separate pages which are connected to the portfolio in which you can show your hobbies (including images) and the places in the world that you have visited.
+
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -51,5 +57,5 @@ You'll now be able to access the website at `localhost:5000` or `127.0.0.1:5000`
 * Rashel Rojas
 * Carlos Seda 
 
-## Roadmap
+## Roadmap
 - Work more with the information, for example, use a database to store all portfolio information
