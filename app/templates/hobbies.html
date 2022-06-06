@@ -2,14 +2,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Hobbies</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
 </head>
 <body>
-    <!-- Hobbies -->
-    <br><br>
-    <div class="slideshow-container" style="padding:0;background-color:transparent;">
 
-        <div class="mySlides fade container">
+    <!-- Menu bar -->
+    <section class="menuHobbiesMap">
+        <nav style="margin:0px; border-radius: 0px;" class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="font-size:23px;padding-left:40px;" class="navbar-brand">{{name}}</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="spaceWords nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Experience</a></li>
+                        <li><a href="/">Education</a></li>
+                        <li><a href="{{ url_for('views.hobbies') }}">Hobbies</a></li>
+                        <li><a href="{{ url_for('views.map') }}">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    <!-- Hobbies -->
+    <div class="slideshow-container" style="padding:0px;background-color:transparent;">
+        <h2 style="margin:20px; margin-top: 70px; text-align:center; font-size:35px !important; font-weight:bold;">Hobbies</h2>
+
+        <h2></h2>
+        <div class="mySlides fade containerhobbies">
             <img class="hobbies" src="../static/img/gym.jpg">
             <div class="overlay">
                 <h3>Hobby 1</h3>
@@ -18,7 +48,7 @@
             </div>
         </div>
     
-        <div class="mySlides fade container">
+        <div class="mySlides fade containerhobbies">
             <img class="hobbies" src="../static/img/videogames.jpeg">
             <div class="overlay">
                 <h3>Hobby 2</h3>
@@ -27,7 +57,7 @@
             </div>
         </div>
 
-        <div class="mySlides fade container">
+        <div class="mySlides fade containerhobbies">
             <img class="hobbies" src="../static/img/garden.jpeg">
             <div class="overlay">
                 <h3>Hobby 3</h3>

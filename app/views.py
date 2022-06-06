@@ -21,8 +21,8 @@ def index():
 
 @views.route("/hobbies")
 def hobbies():
-    return render_template('hobbies.html', url=os.getenv("URL"))
+    return render_template('hobbies.html', name = info['name'], url=os.getenv("URL"))
 
 @views.route("/map")
 def map():
-    return render_template('map.html', url=os.getenv("URL"))
+    return render_template('map.html', name = info['name'], url=os.getenv("URL"))
