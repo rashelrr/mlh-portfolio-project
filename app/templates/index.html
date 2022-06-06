@@ -82,7 +82,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1 col-lg-7">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 style="overflow:hidden;margin:10px 0px 30px 0px;font-weight: 560; font-size:25px;">HI, I'M {{name}}</h4>
+                            <h3 style="overflow:hidden;margin:10px 0px 30px 0px;font-weight: bold">HI, I'M {{name}}</h3>
                             <p style="font-size: 16px;" >{{about}}</p>
                             <p style="font-size: 16px;">{{about2}}</p>
                         </div>
@@ -98,7 +98,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <h2 style="margin:20px; font-size: 50px !important; font-weight: 600;" class="first-headline">Education</h2>
+                        <h2 style="margin:20px; font-size: 35px !important; font-weight: bold;" class="first-headline">Education</h2>
                     </div>
                 </div>
             </div>
@@ -134,64 +134,45 @@
   
     <!-- Work experiences -->
     <!-- Source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
-    <div id = "experience" class="slideshow-container" style="opacity:0;">
-        <div class="mySlides">
-            <h2>Jobtitle 1</h2>
-            <h3>Company Name</h3>
-            <p><i>From Date to Date</i></p>
-            <p>Location</p>
-            <ul>
-                <li>responsibilties</li>
-                <li>responsibilties</li>
-                <li>responsibilties</li>
-            </ul>
+    <div style="margin:100px 0px;">
+        <h2 style="margin:20px; text-align:center; font-size:35px !important; font-weight:bold;">Experience</h2>
+        <div id = "experience" class="slideshow-container" style="opacity:0;">
+            {% for i in range(job_titles|length) %}
+                <div class="mySlides">
+                    <h3 style="font-weight:bold;">{{company_names[i]}}</h3>
+                    <h4>{{job_titles[i]}}</h4>
+                    <h4><i> {{start_dates[i]}} - {{end_dates[i]}}</i></h4>
+                    <h4>{{locations[i]}}</h4>
+                    {% set str_resp = responsibilities[i] %}
+                    {% set lst_resp = str_resp.split('.')%}
+                    <ul>
+                        {% for j in range(lst_resp|length - 1) %}
+                            <li>{{lst_resp[j]}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    
-        <div class="mySlides">
-            <h2>Jobtitle 2</h2>
-            <h3>Company Name</h3>
-            <p><i>From Date to Date</i></p>
-            <p>Location</p>
-            <ul>
-                <li>responsibilties</li>
-                <li>responsibilties</li>
-                <li>responsibilties</li>
-            </ul>
+        
+        <!-- Dots -->
+        <div class="dot-container" style="opacity:0;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-        <div class="mySlides">
-            <h2>Jobtitle 3</h2>
-            <h3>Company Name</h3>
-            <p><i>From Date to Date</i></p>
-            <p>Location</p>
-            <ul>
-                <li>responsibilties</li>
-                <li>responsibilties</li>
-                <li>responsibilties</li>
-            </ul>
-        </div>
-    
-        <!-- Next/prev buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    
-    <!-- Dots -->
-    <div class="dot-container" style="opacity:0;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
     <!--Contact-->
-    <br>
     <div class="contact">
         <h3>Contact Me</h3>
         <p>email@email.com | (123) 456-7890</p>
         <a href="https://github.com/janedoe" ><img class="contactPic" src="../static/img/github.png"></a>
         <a href="https://www.linkedin.com/in/johndoe/"><img class="contactPic" src="../static/img/linkedin.png"></a>
     </div>
-
 
     <script src="../static/scripts/slides.js"></script>
     <script>

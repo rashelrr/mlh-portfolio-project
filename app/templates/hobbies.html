@@ -38,33 +38,15 @@
     <div class="slideshow-container" style="padding:0px;background-color:transparent;">
         <h2 style="margin:20px; margin-top: 70px; text-align:center; font-size:35px !important; font-weight:bold;">Hobbies</h2>
 
-        <h2></h2>
-        <div class="mySlides fade containerhobbies">
-            <img class="hobbies" src="../static/img/gym.jpg">
+        {% for i in range(images|length) %}
+        <div class="mySlides fade container">
+            <img class="hobbies" src="../static/img/{{ images[i] }}">
             <div class="overlay">
-                <h3>Hobby 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>{{hobbies[i]}}</h3>
+                <p>{{descriptions[i]}}</p>
             </div>
         </div>
-    
-        <div class="mySlides fade containerhobbies">
-            <img class="hobbies" src="../static/img/videogames.jpeg">
-            <div class="overlay">
-                <h3>Hobby 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-
-        <div class="mySlides fade containerhobbies">
-            <img class="hobbies" src="../static/img/garden.jpeg">
-            <div class="overlay">
-                <h3>Hobby 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
+        {% endfor %}
     
         <!-- Next/prev buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

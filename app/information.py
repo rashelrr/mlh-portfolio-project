@@ -1,6 +1,6 @@
 info = {
     # Your first and last name
-    'name' : 'Student Name',
+    'name' : 'STUDENT NAME',
     # The name of your university
     'university' : 'University Name',
     # Information about you
@@ -12,4 +12,18 @@ info = {
     'education_gpa' : ['96/100', '98/100'],
     'education_graduation' : ['December 2023'],
     'education_duration' : ['2019 - 2023', '2016 - 2019'],
+    # Work Experience
+    'job_titles' : ['JobTitle 1', 'JobTitle 2', 'JobTitle 3'],
+    'company_names' : ['Company Name 1', 'Company Name 2', 'Company Name 3'],
+    'start_dates' : ['May 2020', 'January 2021', 'June 2021'],
+    'end_dates' : ['August 2020', 'May 2021', 'August 2021'],
+    'locations': ['Location X', 'Location Y', 'Location Z'],
+    'responsibilities': ['Lorem ipsum dolor sit amet, ea errem forensibus sit. Eu mollis equidem vulputate cum.', 
+                        'Id facer alienum tractatos has, quem vocent voluptatum eos ea. Putent vivendo scribentur ne ius.',
+                        'Ei simul feugait neglegentur vel, ut nisl pertinax corrumpit mel. Est ei tantas vituperatoribus.'],
+    'images' : ['gym.jpg', 'videogames.jpeg', 'garden.jpeg'],
+    'hobbies' : ['Hobby 1', 'Hobby 2', 'Hobby 3'],
+    'descriptions' : ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'] 
 }

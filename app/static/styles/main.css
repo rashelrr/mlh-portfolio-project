@@ -102,7 +102,6 @@ body {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
     margin: auto;
     width: 50%;
     padding: 20px;
@@ -111,7 +110,7 @@ body {
 /* Slides */
 .mySlides {
     display: none;
-    padding: 80px;
+    padding: 50px;
 }
 
 /* Next & previous buttons */
@@ -145,8 +144,7 @@ body {
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-    padding: 20px;
-    background: #ddd;
+    padding: 10px;
     margin: auto;
     width: 50%;
 }

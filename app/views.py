@@ -17,11 +17,22 @@ def index():
                         education_gpa = info['education_gpa'],
                         education_grad = info['education_graduation'],
                         education_duration = info['education_duration'],
+                        job_titles = info['job_titles'],
+                        company_names = info['company_names'],
+                        start_dates = info['start_dates'],
+                        end_dates = info['end_dates'],
+                        locations = info['locations'],
+                        responsibilities = info['responsibilities'],
                         url=os.getenv("URL"))
 
 @views.route("/hobbies")
 def hobbies():
-    return render_template('hobbies.html', name = info['name'], url=os.getenv("URL"))
+    return render_template('hobbies.html',
+                        name = info['name'],
+                        images = info['images'],
+                        hobbies = info['hobbies'],
+                        descriptions = info['descriptions'],
+                        url=os.getenv("URL"))
 
 @views.route("/map")
 def map():
