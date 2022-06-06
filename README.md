@@ -16,6 +16,7 @@ On the other hand, we have two separate pages which are connected to the portfol
 - HTML
 - CSS
 - Javascript
+- Bootstrap
 
 ## Installation
 
