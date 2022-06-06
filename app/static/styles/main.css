@@ -167,6 +167,7 @@ body {
 /* Additional stuff for hobbies slideshow*/
 /* Fading animation */
 .fade {
+    opacity: 1;
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -176,7 +177,7 @@ body {
     to {opacity: 1}
 }
 
-.container {
+.containerhobbies {
     padding: 0;
     position: relative;
 }
@@ -201,7 +202,7 @@ body {
     text-align: center;
 }
 
-.container:hover .overlay {
+.containerhobbies:hover .overlay {
     opacity: 1;
 }
 
