@@ -20,5 +20,10 @@ info = {
     'locations': ['Location X', 'Location Y', 'Location Z'],
     'responsibilities': ['Lorem ipsum dolor sit amet, ea errem forensibus sit. Eu mollis equidem vulputate cum.', 
                         'Id facer alienum tractatos has, quem vocent voluptatum eos ea. Putent vivendo scribentur ne ius.',
-                        'Ei simul feugait neglegentur vel, ut nisl pertinax corrumpit mel. Est ei tantas vituperatoribus.']
+                        'Ei simul feugait neglegentur vel, ut nisl pertinax corrumpit mel. Est ei tantas vituperatoribus.'],
+    'images' : ['gym.jpg', 'videogames.jpeg', 'garden.jpeg'],
+    'hobbies' : ['Hobby 1', 'Hobby 2', 'Hobby 3'],
+    'descriptions' : ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'] 
 }
