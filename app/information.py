@@ -14,7 +14,7 @@ info = {
     'education_duration' : ['2019 - 2023', '2016 - 2019'],
     # Work Experience
     'job_titles' : ['JobTitle 1', 'JobTitle 2', 'JobTitle 3'],
-    'company_names' : ['Company Name', 'Company Name', 'Company Name'],
+    'company_names' : ['Company Name 1', 'Company Name 2', 'Company Name 3'],
     'start_dates' : ['May 2020', 'January 2021', 'June 2021'],
     'end_dates' : ['August 2020', 'May 2021', 'August 2021'],
     'locations': ['Location X', 'Location Y', 'Location Z'],

@@ -137,41 +137,21 @@
     <div style="margin:100px 0px;">
         <h2 style="margin:20px; text-align:center; font-size:35px !important; font-weight:bold;">Experience</h2>
         <div id = "experience" class="slideshow-container" style="opacity:0;">
-            <div class="mySlides">
-                <h2>Jobtitle 1</h2>
-                <h3>Company Name</h3>
-                <p><i>From Date to Date</i></p>
-                <p>Location</p>
-                <ul>
-                    <li>responsibilties</li>
-                    <li>responsibilties</li>
-                    <li>responsibilties</li>
-                </ul>
-            </div>
-        
-            <div class="mySlides">
-                <h2>Jobtitle 2</h2>
-                <h3>Company Name</h3>
-                <p><i>From Date to Date</i></p>
-                <p>Location</p>
-                <ul>
-                    <li>responsibilties</li>
-                    <li>responsibilties</li>
-                    <li>responsibilties</li>
-                </ul>
-            </div>
-
-            <div class="mySlides">
-                <h2>Jobtitle 3</h2>
-                <h3>Company Name</h3>
-                <p><i>From Date to Date</i></p>
-                <p>Location</p>
-                <ul>
-                    <li>responsibilties</li>
-                    <li>responsibilties</li>
-                    <li>responsibilties</li>
-                </ul>
-            </div>
+            {% for i in range(job_titles|length) %}
+                <div class="mySlides">
+                    <h3 style="font-weight:bold;">{{company_names[i]}}</h3>
+                    <h4>{{job_titles[i]}}</h4>
+                    <h4><i> {{start_dates[i]}} - {{end_dates[i]}}</i></h4>
+                    <h4>{{locations[i]}}</h4>
+                    {% set str_resp = responsibilities[i] %}
+                    {% set lst_resp = str_resp.split('.')%}
+                    <ul>
+                        {% for j in range(lst_resp|length - 1) %}
+                            <li>{{lst_resp[j]}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
         
             <!-- Next/prev buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
