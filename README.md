@@ -17,6 +17,7 @@ On the other hand, we have two separate pages which are connected to the portfol
 - CSS
 - Javascript
 - Bootstrap
+- Jinja
 
 ## Installation
 
