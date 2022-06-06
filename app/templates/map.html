@@ -37,7 +37,7 @@
         </nav>
     </section>
 
-    <h1>Cool Places I've Been To</h1>
+    <h2 style="margin:20px; margin-top: 70px; text-align:center; font-size:35px !important; font-weight:bold;">Cool Places I've Been To</h2>
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
@@ -54,22 +54,22 @@
         }).addTo(map);
 
         var marker = L.marker([40.71277, -74.00597]).addTo(map);
-        marker.bindPopup("<b>New York, NY</b><br>Came here for university");
+        marker.bindPopup("<h5 style='font-weight:bold'>New York, NY</h5><h6>Came here for university</h6>");
 
         var marker = L.marker([34.052235, -118.243683]).addTo(map);
-        marker.bindPopup("<b>LA, California</b><br>Went to Venice Beach and Hollywood last summer");
+        marker.bindPopup("<h5 style='font-weight:bold'>LA, California</h5><h6>Went to Venice Beach and Hollywood last summer</h6>");
 
         var marker = L.marker([-0.2201641, -78.5123274]).addTo(map);
-        marker.bindPopup("<b>Quito, Ecuador</b><br>Stood on the equator!");
+        marker.bindPopup("<h5 style='font-weight:bold'>Quito, Ecuador</h5><h6>Stood on the equator!</h6>");
 
         var marker = L.marker([37.5666791, 126.9782914]).addTo(map);
-        marker.bindPopup("<b>Seoul, South Korea</b><br>Saw BTS at a concert!");
+        marker.bindPopup("<h5 style='font-weight:bold'>Seoul, South Korea</h5><h6>Saw BTS at a concert!</h6>");
 
         var marker = L.marker([-6.1791181, 35.7468174]).addTo(map);
-        marker.bindPopup("<b>Dodoma, Tanzania</b><br>Visited one of my friends");
+        marker.bindPopup("<h5 style='font-weight:bold'>Dodoma, Tanzania</h5><h6>Visited one of my friends</h6>");
 
         var marker = L.marker([-33.8698439, 151.2082848]).addTo(map);
-        marker.bindPopup("<b>Sydney, Australia</b><br>Saw the cutest kangaroos and koalas here");
+        marker.bindPopup("<h5 style='font-weight:bold'>Sydney, Australia</h5><h6>Saw the cutest kangaroos and koalas here</h6>");
 
         map.setView([0, 0], 1.5);
 
