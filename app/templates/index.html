@@ -38,8 +38,8 @@
                         <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection1" href="#">Home</a></li>
                         <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection2" href="#">About</a></li>
                         <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection3" href="#">Experience</a></li>
-                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Hobbies</a></li>
-                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Map</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="{{ url_for('views.hobbies') }}">Hobbies</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="{{ url_for('views.map') }}">Map</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,8 +62,8 @@
                         <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection4" href="#">Home</a></li>
                         <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection5" href="#">About</a></li>
                         <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a id="redirection6" href="#">Experience</a></li>
-                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Hobbies</a></li>
-                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="#">Map</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="{{ url_for('views.hobbies') }}">Hobbies</a></li>
+                        <li style="font-size:18px;padding: 0px 20px 0px 20px;"><a href="{{ url_for('views.map') }}">Map</a></li>
                     </ul>
                 </div>
             </div>
@@ -184,8 +184,8 @@
     <div class="contact">
         <h3>Contact Me</h3>
         <p>email@email.com | (123) 456-7890</p>
-        <img class="contactPic" src="../static/img/github.png">
-        <img class="contactPic" src="../static/img/linkedin.png">
+        <a href="https://github.com/janedoe" ><img class="contactPic" src="../static/img/github.png"></a>
+        <a href="https://www.linkedin.com/in/johndoe/"><img class="contactPic" src="../static/img/linkedin.png"></a>
     </div>
 
 
