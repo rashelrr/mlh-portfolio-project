@@ -1,5 +1,5 @@
 p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -7,8 +7,83 @@ body {
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
-    font-family: "Roboto", serif;
+    font-family: Helvetica, sans-serif;
     margin: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+.icons-centered {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/background.jpeg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* More About Me Button */
+.buttonmore {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #222222;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 13px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+.buttonmore span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonmore span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonmore:hover span {
+    padding-right: 25px;
+    background-color: #222222;
+}
+
+.buttonmore:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .nav-bar {
@@ -312,7 +387,7 @@ body {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    height: 30px; 
+    height: 40px; 
 }
 
 /* Education timeline */
