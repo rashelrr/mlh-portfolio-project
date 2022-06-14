@@ -1,0 +1,72 @@
+{
+    "name" : "Rashel Rojas",
+    "university" : "Columbia University",
+    "about_yourself" : "I'm a rising senior studying Computer Science with a track in Software Systems at Columbia University. I'm interested in Software Engineering - specifically, backend development.",
+    "education" : [
+        {
+            "type" : "University", 
+            "name" : "Columbia University",
+            "gpa"  : "3.5",
+            "duration" : "2019 - 2023"
+        },
+        {
+            "type" : "High School", 
+            "name" : "Bronx Science",
+            "gpa"  : "95/100",
+            "duration" : "2015 - 2019"
+        }
+    ],
+    "experiences" : [
+        {
+            "position"   : "MLH Fellow",
+            "company"    : "MLH",
+            "start_date" : "May 2022",
+            "end_date"   : "August 2022",
+            "responsibilities" : [
+                {
+                    "resp_1" : "ideinfebon irm kolert",
+                    "resp_2" : "ideinfebon irm kolert",
+                    "resp_3" : "ideinfebon irm kolert"
+                }
+            ]
+        },
+        {
+            "position"   : "Technical Summer Analyst",
+            "company"    : "Goldman Sachs",
+            "start_date" : "June 2021",
+            "end_date"   : "August 2021",
+            "responsibilities" : [
+                {
+                    "resp_1" : "ideinfebon irm kolert",
+                    "resp_2" : "ideinfebon irm kolert",
+                    "resp_3" : "ideinfebon irm kolert"
+                }
+            ]
+        },
+        {
+            "position"   : "Software Engineering Intern",
+            "company"    : "Red Hat",
+            "start_date" : "May 2020",
+            "end_date"   : "August 2020",
+            "responsibilities" : [
+                {
+                    "resp_1" : "ideinfebon irm kolert",
+                    "resp_2" : "ideinfebon irm kolert",
+                    "resp_3" : "ideinfebon irm kolert"
+                }
+            ]
+        }
+    ],
+    "hobbies" : [
+        {
+            "image" : "gym.jpg",
+            "hobby" : "Working Out",
+            "description" : "I work out 4-5 times a week with my sister at our local gym. I love it because I feel accomplished knowing that I'm doing something good for my body."
+        },
+        {
+            "image" : "videogames.jpeg",
+            "hobby" : "Dance",
+            "description" : "I'm no professional but I really enjoy salsa, merengue, and bellydancing."
+        }
+    ]
+}

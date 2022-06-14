@@ -1,5 +1,5 @@
 from flask import Flask
-from app.views import views
+from app.app import app
 
-app = Flask(__name__)
-app.register_blueprint(views)
+x = Flask(__name__)
+x.register_blueprint(app)
