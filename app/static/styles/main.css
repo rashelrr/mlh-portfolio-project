@@ -12,6 +12,10 @@ body {
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     height: 100%;
 }
@@ -90,10 +94,6 @@ a:visited {
 img {
     vertical-align: middle;
 }
-
-
-
-
 
 
 .nav-bar {
