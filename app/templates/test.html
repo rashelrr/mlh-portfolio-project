@@ -7,23 +7,25 @@
 <body>
 
     <div class="parallax">
-        <div class="centered">
-            <h1 style="font-size:100px; font-weight:200px; color:white; margin-bottom: 10px;">Hi, I'm Rashel</h1>
-            <h3 style="color:white;">BACKEND DEVELOPER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; BELLYDANCER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; COLUMBIA STUDENT</h3>
-            <button class="buttonmore" style="margin-top: 10px;"><span><b>MORE ABOUT ME</b></span></button>
+        <div class="centered" style="width: 80%">
+            <h1 style="font-size:100px; font-weight:200px; margin-bottom: 10px;">Hi, I'm Rashel</h1>
+            <h3>BACKEND DEVELOPER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; BELLYDANCER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; COLUMBIA STUDENT</h3>
+            <button class="buttonmore" style="margin-top: 10px;"><a href="#about"><span><b>MORE ABOUT ME</b></span></a></button>
             <br><br><br><br><br>
         </div>
 
-        <div class="icons-centered contact">
+        <div class="centered contact" style="top: 90%">
             <a href="https://github.com/rashelrr"><img class="contactPic" src="../static/img/github.png" style="margin-right:10px"></a>
             <a href="https://www.linkedin.com/in/rashelrojas/"><img class="contactPic" src="../static/img/linkedin.png" style="margin-left:10px; margin-right: 10px;"></a>
             <img class="contactPic" src="../static/img/resume.png" style="margin-left:10px">
         </div>
     </div>
-    <div style="height:1000px;background-color:rgb(197, 144, 144);font-size:36px">
-        Scroll Up and Down this page to see the parallax scrolling effect.
-        This div is just here to enable scrolling.
-        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    
+    <div id="about" class="parent" style="height:500px;background-color:rgb(87, 47, 88);">
+        <div class="centered" style="width: 60%">
+            <img align="left" class="rounded-img" src="../static/img/self_pic.JPG" >
+            <p style="font-size: 24px">{{about}}</p>
+        </div>
     </div>
         
     <div class="parallax"></div>

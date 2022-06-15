@@ -1,5 +1,6 @@
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: Helvetica, sans-serif;
+    color: white;
 }
 
 body {
@@ -15,21 +16,16 @@ body, html {
     height: 100%;
 }
 
+.parent {
+    position: relative;
+}
+
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
-}
-
-.icons-centered {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .parallax {
@@ -85,6 +81,20 @@ body, html {
     opacity: 1;
     right: 0;
 }
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+
+
+
 
 .nav-bar {
     width: 100%;
@@ -294,9 +304,10 @@ body, html {
     margin-top: -1px !important;
 }
 
-.roundedimg {
-    width: 25%;
-    border-radius: 100px;
+.rounded-img {
+    width: 300px;
+    border-radius: 200px;
+    margin: 0 50px 0 0;
 }
 
 .imgfade{
