@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 tmux kill-server
 cd ~/mlh-portfolio-project
