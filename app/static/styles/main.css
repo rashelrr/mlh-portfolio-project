@@ -32,6 +32,11 @@ body, html {
   text-align: center;
 }
 
+.vertical-middle {
+    display: flex;
+    align-items: center;
+}
+
 .parallax {
     /* The image used */
     background-image: url('../img/background.jpeg');
@@ -94,7 +99,6 @@ a:visited {
 img {
     vertical-align: middle;
 }
-
 
 .nav-bar {
     width: 100%;
@@ -305,7 +309,7 @@ img {
 }
 
 .rounded-img {
-    width: 300px;
+    width: 350px;
     border-radius: 200px;
     margin: 0 50px 0 0;
 }
