@@ -11,7 +11,7 @@ data = json.loads(f.read())
 
 @app.route("/")
 def index():
-    return render_template('test.html', name = data['name'], 
+    return render_template('index.html', name = data['name'], 
                         university = data['university'], 
                         about = data['about_yourself'], 
                         education = data['education'], 
@@ -20,10 +20,6 @@ def index():
 
 @app.route("/hobbies")
 def hobbies():
-    return render_template('hobbies.html',
+    return render_template('hobbies.html', name = data['name'], 
                         hobbies = data['hobbies'],
                         url=os.getenv("URL"))
-
-@app.route("/map")
-def map():
-    return render_template('map.html', name = data['name'], url=os.getenv("URL"))
