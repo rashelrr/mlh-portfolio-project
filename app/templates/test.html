@@ -3,30 +3,159 @@
     <meta charset="UTF-8">
     <title>{{name}}</title> 
     <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
 </head>
 <body>
 
-    <div class="parallax">
-        <div class="centered">
-            <h1 style="font-size:100px; font-weight:200px; color:white; margin-bottom: 10px;">Hi, I'm Rashel</h1>
-            <h3 style="color:white;">BACKEND DEVELOPER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; BELLYDANCER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; COLUMBIA STUDENT</h3>
-            <button class="buttonmore" style="margin-top: 10px;"><span><b>MORE ABOUT ME</b></span></button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#map">Places I've Visited</a>
+        <!-- TO DO: add hobbies-->
+    </div>
+
+    <div class="parallax" style="height: 100%">
+        <span id="sidebar-icon" onclick="openNav()">&#9776;</span>
+        
+        <div class="centered" style="width: 80%">
+            <h1 style="font-size:100px; font-weight:200px; margin-bottom: 10px;">Hi, I'm Rashel</h1>
+            <h3>BACKEND DEVELOPER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; BELLYDANCER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; COLUMBIA STUDENT</h3>
+            <button class="buttonmore" style="margin-top: 10px;"><a href="#about"><span><b>MORE ABOUT ME</b></span></a></button>
             <br><br><br><br><br>
         </div>
 
-        <div class="icons-centered contact">
+        <div class="centered contact" style="top: 90%">
             <a href="https://github.com/rashelrr"><img class="contactPic" src="../static/img/github.png" style="margin-right:10px"></a>
             <a href="https://www.linkedin.com/in/rashelrojas/"><img class="contactPic" src="../static/img/linkedin.png" style="margin-left:10px; margin-right: 10px;"></a>
             <img class="contactPic" src="../static/img/resume.png" style="margin-left:10px">
         </div>
     </div>
-    <div style="height:1000px;background-color:rgb(197, 144, 144);font-size:36px">
-        TESTING Scroll Up and Down this page to see the parallax scrolling effect.
-        This div is just here to enable scrolling.
-        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "auto";
+          document.getElementById("mySidenav").style.border = "1px solid #000000;";
+        }
+  
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.border = "0";
+        }
+    </script>
+
+
+    <div id="about" class="parent section" style="height:500px;">
+        <div class="centered vertical-middle" style="width: 60%; text-align: left;">
+            <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
+            <div>
+                <h1>About Me</h1>
+                <p style="font-size:20px">{{about}}</p>
+            </div>
+        </div>
     </div>
-        
+
     <div class="parallax"></div>
+
+    <div id="education" class="parent section">
+        <h1 style="text-align:center;">Education</h1>
+        <div class="timeline" style="width: 60%;">
+            {% for i in range(education|length) %}
+                {% if i % 2 == 0 %}
+                <div class="container left">
+                    <div class="content">
+                        <h2 style="color:black;">{{education[i]["name"]}}</h2>
+                        <p style="color:black;"> <i>{{education[i]["type"]}}</i> <br> {{education[i]["duration"]}} <br> {{education[i]["gpa"]}}</p>
+                    </div>
+                </div>
+                {% else %}
+                <div class="container right">
+                    <div class="content">
+                        <h2 style="color:black;">{{education[i]["name"]}}</h2>
+                        <p style="color:black;"> <i>{{education[i]["type"]}}</i> <br> {{education[i]["duration"]}} <br> {{education[i]["gpa"]}}</p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <div id="experience" class="parent section">
+        <h1 style="text-align:center;">Experience</h1>
+        <div class="timeline" style="width: 70%;">
+            {% for i in range(experiences|length) %}
+                {% if i % 2 == 0 %}
+                <div class="container left">
+                    <div class="content">
+                        <h2 style="color:black;">{{experiences[i]["position"]}}</h2>
+                        <p style="color:black;"> <i>{{experiences[i]["company"]}}</i> <br> {{experiences[i]["location"]}} <br> {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}}</p>
+                        {% set lst_resp = experiences[i]["responsibilities"][0] %}
+                        <ul>
+                            {% for key, value in lst_resp.items() %}
+                                <li>{{value}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% else %}
+                <div class="container right">
+                    <div class="content">
+                        <h2 style="color:black;">{{experiences[i]["position"]}}</h2>
+                        <p style="color:black;"> <i>{{experiences[i]["company"]}}</i> <br> {{experiences[i]["location"]}} <br> {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}}</p>
+                        {% set lst_resp = experiences[i]["responsibilities"][0] %}
+                        <ul>
+                            {% for key, value in lst_resp.items() %}
+                                <li>{{value}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+    <div id="map" class="parent section">
+        <h1 style="text-align:center">Places I've Visited</h1>
+        <div id="maparea"></div>
+    </div>
+
+    <div class="parallax" style="height: 20%;"></div>
+
+    <script>
+        var map = L.map('maparea').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        var marker = L.marker([40.71277, -74.00597]).addTo(map);
+        marker.bindPopup("<h2 style='color:black;'>New York, NY</h2><h3 style='color:black;'>I'm a Queens native and proud of it! Having lived here all my life, I've done pretty much all of the classic touristy stuff for NYC: went to a Broadway Show, walked the Brooklyn Bridge, been to the top of the Empire State Building, etc. I love going to Chinatown, K-Town and Flushing to try new restaurants or dessert places &#127849;</h3>");
+
+        var marker = L.marker([34.052235, -118.243683]).addTo(map);
+        marker.bindPopup("<h2 style='color:black;'>LA, California</h2><h3 style='color:black;'>Went to Venice Beach &#127796; and Hollywood</h3>");
+
+        var marker = L.marker([32.7762719,-96.7968559]).addTo(map);
+        marker.bindPopup("<h2 style='color:black;'>Dallas, TX</h2><h3 style='color:black;'>Came here last summer for an internship and had the best BBQ &#129316;</h3>");
+
+        var marker = L.marker([-0.2201641, -78.5123274]).addTo(map);
+        marker.bindPopup("<h2 style='color:black;'>Quito, Ecuador</h2><h3 style='color:black;'>Stood on the equator!</h3>");
+
+        map.setView([39.7837304,-100.445882], 3);
+    </script>
+
 
 </body>
 </html>

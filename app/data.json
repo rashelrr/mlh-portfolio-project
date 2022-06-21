@@ -20,39 +20,39 @@
         {
             "position"   : "MLH Fellow",
             "company"    : "MLH",
+            "location"   : "Remote",
             "start_date" : "May 2022",
             "end_date"   : "August 2022",
             "responsibilities" : [
                 {
-                    "resp_1" : "ideinfebon irm kolert",
-                    "resp_2" : "ideinfebon irm kolert",
-                    "resp_3" : "ideinfebon irm kolert"
+                    "resp_1" : "Created a portfolio web app using Flask, JavaScript, HTML, CSS"
                 }
             ]
         },
         {
             "position"   : "Technical Summer Analyst",
             "company"    : "Goldman Sachs",
+            "location"   : "Dallas, TX",
             "start_date" : "June 2021",
             "end_date"   : "August 2021",
             "responsibilities" : [
                 {
-                    "resp_1" : "ideinfebon irm kolert",
-                    "resp_2" : "ideinfebon irm kolert",
-                    "resp_3" : "ideinfebon irm kolert"
+                    "resp_1" : "Optimized storage system of a pre-trade analysis tool called Troodon, which generates and stores Bond Analysis Worksheets (BAWs) into a local folder used by the CLO Secondary Trading desk of 15 traders",
+                    "resp_2" : "Created a Procmon script in Slang (GS proprietary language) to transfer BAWs older than 2 years from local to cloud storage in Goldman Sachs’ main cloud storage system, OBS2",
+                    "resp_3" : "Successful in freeing up hundreds of gigabytes of space, which came at a crucial time considering local storage was at 90% capacity and the recent uptick in CLO trading"
                 }
             ]
         },
         {
             "position"   : "Software Engineering Intern",
             "company"    : "Red Hat",
+            "location"   : "Boston, MA",
             "start_date" : "May 2020",
             "end_date"   : "August 2020",
             "responsibilities" : [
                 {
-                    "resp_1" : "ideinfebon irm kolert",
-                    "resp_2" : "ideinfebon irm kolert",
-                    "resp_3" : "ideinfebon irm kolert"
+                    "resp_1" : "Worked under Babak Mozaffari on a team of 13 software engineers on the development of OpenShift / Kubernetes operators for Red Hat and upstream open-source products",
+                    "resp_2" : "Implemented CR/CRD validation and ConsoleLink creation for 5 operators (3scale, Teiid, Apicurio, Hawtio, Syndesis) using Go and verified operator deployment via the OpenShift Container Platform"
                 }
             ]
         }
