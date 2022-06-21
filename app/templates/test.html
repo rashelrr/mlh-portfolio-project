@@ -21,7 +21,7 @@
         </div>
     </div>
     
-    <div id="about" class="parent" style="height:500px;background-color:#2E0249;">
+    <div id="about" class="parent section" style="height:500px;">
         <div class="centered vertical-middle" style="width: 60%; text-align: left;">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
             <div>
@@ -33,7 +33,7 @@
 
     <div class="parallax"></div>
 
-    <div class="parent" style="height:600px;background-color:#2E0249;padding-top:50px;">
+    <div id = "education" class="parent section" style="height:600px;">
         <h1 style="text-align:center;">Education</h1>
         <div class="timeline" style="width: 60%;">
             {% for i in range(education|length) %}
@@ -58,6 +58,42 @@
 
     <div class="parallax"></div>
 
+    <div id = "experience" class="parent section" style="height:auto;">
+        <h1 style="text-align:center;">Experience</h1>
+        <div class="timeline" style="width: 70%;">
+            {% for i in range(experiences|length) %}
+                {% if i % 2 == 0 %}
+                <div class="container left">
+                    <div class="content">
+                        <h2 style="color:black;">{{experiences[i]["position"]}}</h2>
+                        <p style="color:black;"> <i>{{experiences[i]["company"]}}</i> <br> {{experiences[i]["location"]}} <br> {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}}</p>
+                        {% set lst_resp = experiences[i]["responsibilities"][0] %}
+                        <ul>
+                            {% for key, value in lst_resp.items() %}
+                                <li>{{value}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% else %}
+                <div class="container right">
+                    <div class="content">
+                        <h2 style="color:black;">{{experiences[i]["position"]}}</h2>
+                        <p style="color:black;"> <i>{{experiences[i]["company"]}}</i> <br> {{experiences[i]["location"]}} <br> {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}}</p>
+                        {% set lst_resp = experiences[i]["responsibilities"][0] %}
+                        <ul>
+                            {% for key, value in lst_resp.items() %}
+                                <li>{{value}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="parallax"></div>
 
 </body>
 </html>
