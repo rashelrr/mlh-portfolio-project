@@ -9,7 +9,18 @@
 </head>
 <body>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#map">Places I've Visited</a>
+        <!-- TO DO: add hobbies-->
+    </div>
+
     <div class="parallax" style="height: 100%">
+        <span id="sidebar-icon" onclick="openNav()">&#9776;</span>
+        
         <div class="centered" style="width: 80%">
             <h1 style="font-size:100px; font-weight:200px; margin-bottom: 10px;">Hi, I'm Rashel</h1>
             <h3>BACKEND DEVELOPER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; BELLYDANCER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; COLUMBIA STUDENT</h3>
@@ -23,7 +34,20 @@
             <img class="contactPic" src="../static/img/resume.png" style="margin-left:10px">
         </div>
     </div>
-    
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "auto";
+          document.getElementById("mySidenav").style.border = "1px solid #000000;";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.border = "0";
+        }
+    </script>
+
+
     <div id="about" class="parent section" style="height:500px;">
         <div class="centered vertical-middle" style="width: 60%; text-align: left;">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
@@ -103,12 +127,12 @@
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
 
-    <div id="map" class="parent section" >
+    <div id="map" class="parent section">
         <h1 style="text-align:center">Places I've Visited</h1>
         <div id="maparea"></div>
     </div>
 
-    <div class="parallax"></div>
+    <div class="parallax" style="height: 20%;"></div>
 
     <script>
         var map = L.map('maparea').setView([51.505, -0.09], 13);

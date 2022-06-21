@@ -116,43 +116,6 @@ img {
 }  
 
 
-.nav-bar {
-    width: 100%;
-    display: inline-block;
-    background-color: #1C539F;
-    font-family: "Roboto", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
-}
-
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
-    width: 200px;
-}
-
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
-}
 
 .profile {
     background-color: #1d539f !important;
@@ -372,33 +335,6 @@ img {
     display:block !important;
 }
 
-/* Menu bar */
-.menu2{
-    display: none;
-        position:fixed !important;
-    top:0 !important;
-    left:0 !important;
-    width:100%;
-    z-index:20;
-}
-
-.menuHobbiesMap{
-    display: block;
-    position:fixed !important;
-    top:0 !important;
-    left:0 !important;
-    width:100%;
-    z-index:20;
-}
-
-.spaceWords li{
-    font-size:18px;padding: 0px 20px 0px 20px;
-}
-
-.disp {
-    display: block;
-}
-
 
 /* Map */
 #maparea { 
@@ -550,4 +486,55 @@ img {
     left: 0%;
     }
   }
+
+/* Menu Sidebar */
+#sidebar-icon {
+    position: fixed;
+    z-index: 1000;
+    cursor:pointer;
+    color:white;
+    font-size: 50px;
+    padding: 5px 5px 10px 5px;
+    margin: 20px;
+}
+
+.sidenav {
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  border-radius: 0 5px 5px 5px;
+}
+
+.sidenav a {
+  padding: 8px 23px 20px 23px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   
