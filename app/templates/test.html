@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <div class="parallax">
+    <div class="parallax" style="height: 100%">
         <div class="centered" style="width: 80%">
             <h1 style="font-size:100px; font-weight:200px; margin-bottom: 10px;">Hi, I'm Rashel</h1>
             <h3>BACKEND DEVELOPER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; BELLYDANCER &ensp; &ensp; &ensp; // &ensp; &ensp; &ensp; COLUMBIA STUDENT</h3>
@@ -25,13 +25,39 @@
         <div class="centered vertical-middle" style="width: 60%; text-align: left;">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
             <div>
-                <h2>About Me</h2>
+                <h1>About Me</h1>
                 <p style="font-size:20px">{{about}}</p>
             </div>
         </div>
     </div>
-        
+
     <div class="parallax"></div>
+
+    <div class="parent" style="height:600px;background-color:#2E0249;padding-top:50px;">
+        <h1 style="text-align:center;">Education</h1>
+        <div class="timeline" style="width: 60%;">
+            {% for i in range(education|length) %}
+                {% if i % 2 == 0 %}
+                <div class="container left">
+                    <div class="content">
+                        <h2 style="color:black;">{{education[i]["name"]}}</h2>
+                        <p style="color:black;"> <i>{{education[i]["type"]}}</i> <br> {{education[i]["duration"]}} <br> {{education[i]["gpa"]}}</p>
+                    </div>
+                </div>
+                {% else %}
+                <div class="container right">
+                    <div class="content">
+                        <h2 style="color:black;">{{education[i]["name"]}}</h2>
+                        <p style="color:black;"> <i>{{education[i]["type"]}}</i> <br> {{education[i]["duration"]}} <br> {{education[i]["gpa"]}}</p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
 
 </body>
 </html>
