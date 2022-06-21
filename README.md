@@ -19,6 +19,9 @@ On the other hand, we have two separate pages which are connected to the portfol
 - Bootstrap
 - Jinja
 
+## Try it Out
+http://rashelrojasportfolio.duckdns.org:5000/
+
 ## Installation
 
 Make sure you have python3 and pip installed
