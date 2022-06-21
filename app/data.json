@@ -60,13 +60,11 @@
     "hobbies" : [
         {
             "image" : "gym.jpg",
-            "hobby" : "Working Out",
-            "description" : "I work out 4-5 times a week with my sister at our local gym. I love it because I feel accomplished knowing that I'm doing something good for my body."
+            "hobby" : "Working Out"
         },
         {
-            "image" : "videogames.jpeg",
-            "hobby" : "Dance",
-            "description" : "I'm no professional but I really enjoy salsa, merengue, and bellydancing."
+            "image" : "bellydance.png",
+            "hobby" : "Bellydance"
         }
     ]
 }

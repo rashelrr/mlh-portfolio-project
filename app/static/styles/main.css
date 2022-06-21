@@ -164,15 +164,13 @@ img {
     font-weight: 700;
 }
 
-/* WORK EXPERIENCES below */ 
+/* WORK EXPERIENCES & HOBBIES */ 
 /* Source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp*/
-
 /* Slideshow container */
 .slideshow-container {
     position: relative;
     margin: auto;
-    width: 50%;
-    padding: 20px;
+    width: 70%;
 }
 
 /* Slides */
