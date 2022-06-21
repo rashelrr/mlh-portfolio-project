@@ -15,7 +15,9 @@ body {
 .section {
     background-color:#2E0249;
     overflow:auto;
+    height: auto;
     padding-top:50px;
+    padding-bottom: 50px;
 }
 
 html {
@@ -399,9 +401,9 @@ img {
 
 
 /* Map */
-#map { 
+#maparea { 
     height: 500px; 
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
