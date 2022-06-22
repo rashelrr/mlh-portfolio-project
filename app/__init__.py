@@ -1,6 +1,7 @@
 from peewee import *
 from flask import Flask
 from app.app import app
+import os
 
 x = Flask(__name__)
 x.register_blueprint(app)
