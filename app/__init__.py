@@ -1,6 +1,6 @@
 from peewee import *
 from playhouse.shortcuts import model_to_dict
-from flask import Flask, request
+from flask import Flask, render_template, request
 from app.app import app
 import os
 import datetime
@@ -46,3 +46,10 @@ def get_time_line_post():
             for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
+
+@x.route('/timeline')
+def timeline():
+    posts = [model_to_dict(p) for p in TimelinePost.select().order_by(TimelinePost.
+    created_at.desc())]
+    return render_template('timeline.html', title="Timeline", posts=posts,
+        url=os.getenv("URL"))

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title> 
+    <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+    <style>
+        p, h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:50px 50px 50px 50px;">
+        <h1>Make a Timeline Post</h1>
+        <form id="form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="content">Content:</label><br>
+            <input type="text" id="content" name="content"><br><br>
+
+            <input type="submit" value="Submit">
+        </form> 
+
+        <div>
+            <h1>All Timeline Posts</h1>
+            {% for post in posts %} 
+                <p>Id: {{post["id"]}}</p>
+                <p>Name: {{post["name"]}}</p>
+                <p>Email: {{post["email"]}}</p>
+                <p>Content: {{post["content"]}}</p>
+                <br>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <script>
+        const form = document.getElementById('form');        
+        form.addEventListener('submit', function(e) {
+            // Prevent default behavior:
+            e.preventDefault();
+            // Create payload as new FormData object:
+            const payload = new FormData(form);
+            // Post the payload using Fetch:
+            fetch('http://127.0.0.1:5000/api/timeline_post', {
+            method: 'POST',
+            body: payload,
+            })
+            .then(res => res.json())
+            .then(data => console.log(data))
+            location.reload();
+        })
+    </script>
+
+    <!-- 
+    TO DO:
+    1. Send a POST request to /api/timeline_post endpoint when 'Submit' clicked
+    2. When user clicks 'Submit', display all posts below form 
+    3. When page loads, display all posts
+    -->
+
+
+</body>
+</html>
