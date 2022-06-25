@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tmux kill-session -t portfolio_session
+tmux kill-server
 cd ~/mlh-portfolio-project
 git fetch && git reset origin/main --hard
 python -m venv python3-virtualenv
