@@ -6,7 +6,7 @@ from app import TimelinePost
 MODELS = [TimelinePost]
 
 # use an in-memorv SOLite for tests
-test_db = SqliteDatabase(': memory:')
+test_db = SqliteDatabase(':memory:')
 
 class TestTimelinePost(unittest.TestCase):
     def setUp(self):
@@ -25,7 +25,7 @@ class TestTimelinePost(unittest.TestCase):
         test_db.close()
 
     def test_timeline_post(self):
-    # Create 2 timeline posts
+    # Create 2 timeline posts and test them 
         first_post = TimelinePost.create(name='John Doe',
         email='john@example.com', content='Hello world, I\'m John!')
         assert first_post.id == 1
