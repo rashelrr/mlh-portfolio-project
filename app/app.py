@@ -4,12 +4,12 @@ from flask import Blueprint, render_template
 from dotenv import load_dotenv
 
 load_dotenv()
-views = Blueprint('views', __name__, template_folder='templates')
+app = Blueprint('app', __name__, template_folder='templates')
 
 f = open ('app/data.json', "r")
 data = json.loads(f.read())
 
-@views.route("/")
+@app.route("/")
 def index():
     return render_template('index.html', name = data['name'], 
                         university = data['university'], 
@@ -18,7 +18,7 @@ def index():
                         experiences = data['experiences'],
                         url=os.getenv("URL"))
 
-@views.route("/hobbies")
+@app.route("/hobbies")
 def hobbies():
     return render_template('hobbies.html', name = data['name'], 
                         hobbies = data['hobbies'],
