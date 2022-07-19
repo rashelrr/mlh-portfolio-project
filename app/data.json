@@ -18,20 +18,22 @@
     ],
     "experiences" : [
         {
-            "position"   : "MLH Fellow",
-            "company"    : "MLH",
+            "logo" : "mlh.png",
+            "position"   : "Production Engineering Fellow",
             "location"   : "Remote",
             "start_date" : "May 2022",
             "end_date"   : "August 2022",
             "responsibilities" : [
                 {
-                    "resp_1" : "Created a portfolio web app using Flask, JavaScript, HTML, CSS"
+                    "resp_1" : "Created a portfolio web application using Docker, Flask, Jinja, JavaScript, HTML, and CSS",
+                    "resp_2" : "Learned about various production engineering topics such as scripting, services, testing, containers, CI/CD integration, etc."
                 }
-            ]
+            ],
+            "project" : "https://github.com/rashelrr/mlh-portfolio-project"
         },
         {
+            "logo" : "goldman_sachs.png",
             "position"   : "Technical Summer Analyst",
-            "company"    : "Goldman Sachs",
             "location"   : "Dallas, TX",
             "start_date" : "June 2021",
             "end_date"   : "August 2021",
@@ -44,8 +46,8 @@
             ]
         },
         {
+            "logo" : "redhat.png",
             "position"   : "Software Engineering Intern",
-            "company"    : "Red Hat",
             "location"   : "Boston, MA",
             "start_date" : "May 2020",
             "end_date"   : "August 2020",
@@ -54,7 +56,8 @@
                     "resp_1" : "Worked under Babak Mozaffari on a team of 13 software engineers on the development of OpenShift / Kubernetes operators for Red Hat and upstream open-source products",
                     "resp_2" : "Implemented CR/CRD validation and ConsoleLink creation for 5 operators (3scale, Teiid, Apicurio, Hawtio, Syndesis) using Go and verified operator deployment via the OpenShift Container Platform"
                 }
-            ]
+            ],
+            "project" : "https://github.com/Apicurio/apicurio-operators"
         }
     ],
     "hobbies" : [

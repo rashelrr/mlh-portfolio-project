@@ -43,7 +43,7 @@
         <div class="centered vertical-middle" style="width: 60%; text-align: left;">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
             <div>
-                <h1 style="font-size:70px">About Me</h1>
+                <h1 style="font-size:65px">About Me</h1>
                 <p style="font-size:22px">{{about}}</p>
             </div>
         </div>  
@@ -53,7 +53,7 @@
 
     <div id="education" class="parent section parallax">
         <div class="centered" style="width: 60%;">
-            <h1 style="text-align:center;font-size:70px">Education</h1>
+            <h1 style="text-align:center;font-size:65px">Education</h1>
             <div class="row">
 
                 {% for i in range(education|length) %}
@@ -85,48 +85,44 @@
         </div>
     </div>
 
-    <div id="experience" class="parent section parallax">
-        <h1 style="text-align:center;font-size:70px">Experience</h1>
-        <div class="timeline" style="width: 70%;">
+    <div id="experience" class="parent section parallax" style="height: 200%;">
+        <div class="centered" style="width: 35%;">
+            <h1 style="text-align:center;font-size:65px;padding-top: 50px; padding-bottom: 40px;">Experience</h1>
+
             {% for i in range(experiences|length) %}
-                {% if i % 2 == 0 %}
-                <div class="container left">
-                    <div class="content">
-                        <h2 style="color:black;">{{experiences[i]["position"]}}</h2>
-                        <p style="color:black;"> <i>{{experiences[i]["company"]}}</i> <br> {{experiences[i]["location"]}} <br> {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}}</p>
-                        {% set lst_resp = experiences[i]["responsibilities"][0] %}
-                        <ul>
-                            {% for key, value in lst_resp.items() %}
-                                <li>{{value}}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+                <div style="font-size:18px; padding-bottom: 60px; letter-spacing: 1px;">
+                    <img style="width:40%;" src="../static/img/{{ experiences[i]['logo'] }}">
+                    <p>
+                        <b style="font-size:25px">{{experiences[i]["position"]}}</b> <br>
+                        {{experiences[i]["location"]}} <br> 
+                        {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}} <br>
+                    </p>
+                    {% set lst_resp = experiences[i]["responsibilities"][0] %}
+                    <ul style="text-align:left">
+                        {% for key, value in lst_resp.items() %}
+                            <li>{{value}}</li>
+                        {% endfor %}
+                    </ul>
+                    <p>
+                        {% if experiences[i]["project"]|length %}
+                        Project: <a href="{{experiences[i]['project']}}">{{experiences[i]["project"]}}</a>
+                        {% endif %}
+                    </p>
                 </div>
-                {% else %}
-                <div class="container right">
-                    <div class="content">
-                        <h2 style="color:black;">{{experiences[i]["position"]}}</h2>
-                        <p style="color:black;"> <i>{{experiences[i]["company"]}}</i> <br> {{experiences[i]["location"]}} <br> {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}}</p>
-                        {% set lst_resp = experiences[i]["responsibilities"][0] %}
-                        <ul>
-                            {% for key, value in lst_resp.items() %}
-                                <li>{{value}}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-                {% endif %}
             {% endfor %}
+    
         </div>
     </div>
 
+    
+    
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
 
     <div id="map" class="parent section parallax">
-        <h1 style="text-align:center;font-size:70px">Places I've Visited</h1>
+        <h1 style="text-align:center;font-size:65px">Places I've Visited</h1>
         <div id="maparea"></div>
     </div>
 
