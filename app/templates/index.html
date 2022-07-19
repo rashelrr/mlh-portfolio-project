@@ -14,8 +14,8 @@
         <a href="#about">About Me</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
+        <a href="#hobbies">Hobbies</a>
         <a href="#map">Places I've Visited</a>
-        <a href="{{ url_for('views.hobbies') }}">Hobbies</a>
     </div>
 
     <div id="home" class="parallax" style="height: 100%">
@@ -87,7 +87,7 @@
 
     <div id="experience" class="parent section parallax" style="height: 200%;">
         <div class="centered" style="width: 35%;">
-            <h1 style="text-align:center;font-size:65px;padding-top: 50px; padding-bottom: 40px;">Experience</h1>
+            <h1 style="text-align:center;font-size:65px;padding-top: 200px; padding-bottom: 40px;">Experience</h1>
 
             {% for i in range(experiences|length) %}
                 <div style="font-size:18px; padding-bottom: 60px; letter-spacing: 1px;">
@@ -104,8 +104,8 @@
                         {% endfor %}
                     </ul>
                     <p>
-                        {% if experiences[i]["project"]|length %}
-                        Project: <a href="{{experiences[i]['project']}}">{{experiences[i]["project"]}}</a>
+                        {% if experiences[i]["project_link"]|length %}
+                        <a href="{{experiences[i]['project_link']}}">{{experiences[i]["project_desc"]}}</a>
                         {% endif %}
                     </p>
                 </div>
@@ -114,15 +114,43 @@
         </div>
     </div>
 
+    <div id="hobbies" class="parent section parallax" style="height: 100%">
+        <div class="centered" style="width: 100%;">
+            <h1 style="text-align:center;font-size:65px">Hobbies</h1>
+
+            <div class="contact">
+                {% for i in range(hobbies|length) %}
+                    <img class="contactPic" src="../static/img/{{ hobbies[i]['image'] }}"  style="margin-right:30px;margin-bottom:30px;height:250px">
+                {% endfor %}
+            </div>
     
+
+
+
+
+            <!--{% for i in range(hobbies|length) %}
+            <div>
+                <img style="width:50%" src="../static/img/{{ hobbies[i]['image'] }}">
+                <div >
+                    <h3>{{hobbies[i]["hobby"]}}</h3>
+                </div>
+            </div>
+            {% endfor %}-->
+        </div>
+    </div>
     
+
+
+
+
+
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
 
     <div id="map" class="parent section parallax">
-        <h1 style="text-align:center;font-size:65px">Places I've Visited</h1>
+        <h1 style="text-align:center;font-size:65px">Favorite Restaurants</h1>
         <div id="maparea"></div>
     </div>
 

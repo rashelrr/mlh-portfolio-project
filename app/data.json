@@ -29,7 +29,8 @@
                     "resp_2" : "Learned about various production engineering topics such as scripting, services, testing, containers, CI/CD integration, etc."
                 }
             ],
-            "project" : "https://github.com/rashelrr/mlh-portfolio-project"
+            "project_desc" : "Click to View Portfolio Project",
+            "project_link" : "https://github.com/rashelrr/mlh-portfolio-project"
         },
         {
             "logo" : "goldman_sachs.png",
@@ -57,17 +58,22 @@
                     "resp_2" : "Implemented CR/CRD validation and ConsoleLink creation for 5 operators (3scale, Teiid, Apicurio, Hawtio, Syndesis) using Go and verified operator deployment via the OpenShift Container Platform"
                 }
             ],
-            "project" : "https://github.com/Apicurio/apicurio-operators"
+            "project_desc" : "Click to View Apicurio Operator Project",
+            "project_link" : "https://github.com/Apicurio/apicurio-operators"
         }
     ],
     "hobbies" : [
+        {
+            "image" : "bellydance.png",
+            "hobby" : "Bellydance"
+        },
         {
             "image" : "gym.jpg",
             "hobby" : "Working Out"
         },
         {
-            "image" : "bellydance.png",
-            "hobby" : "Bellydance"
+            "image" : "coding.jpeg",
+            "hobby" : "Coding"
         }
     ]
 }

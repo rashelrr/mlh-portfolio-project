@@ -16,10 +16,5 @@ def index():
                         about = data['about_yourself'], 
                         education = data['education'], 
                         experiences = data['experiences'],
-                        url=os.getenv("URL"))
-
-@views.route("/hobbies")
-def hobbies():
-    return render_template('hobbies.html', name = data['name'], 
                         hobbies = data['hobbies'],
                         url=os.getenv("URL"))
