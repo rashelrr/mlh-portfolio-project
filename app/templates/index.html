@@ -40,7 +40,7 @@
     <script src="../static/scripts/sidebar.js"></script>
 
     <div id="about" class="parent section parallax" style="height:97%;">
-        <div class="centered vertical-middle" style="width: 60%; text-align: left;">
+        <div class="centered vertical-middle" style="width: 60%; text-align: left">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
             <div>
                 <h1 style="font-size:65px">About Me</h1>
@@ -53,7 +53,7 @@
 
     <div id="education" class="parent section parallax">
         <div class="centered" style="width: 60%;">
-            <h1 style="text-align:center;font-size:65px">Education</h1>
+            <h1 style="font-size:65px">Education</h1>
             <div class="row">
 
                 {% for i in range(education|length) %}
@@ -87,10 +87,10 @@
 
     <div id="experience" class="parent section parallax" style="height: 200%;">
         <div class="centered" style="width: 35%;">
-            <h1 style="text-align:center;font-size:65px;padding-top: 200px; padding-bottom: 40px;">Experience</h1>
+            <h1 style="font-size:65px;padding-top: 200px; padding-bottom: 40px;">Experience</h1>
 
             {% for i in range(experiences|length) %}
-                <div style="font-size:18px; padding-bottom: 60px; letter-spacing: 1px;">
+                <div style="font-size:18px;padding-bottom:60px">
                     <img style="width:40%;" src="../static/img/{{ experiences[i]['logo'] }}">
                     <p>
                         <b style="font-size:25px">{{experiences[i]["position"]}}</b> <br>
@@ -116,11 +116,15 @@
 
     <div id="hobbies" class="parent section parallax" style="height: 100%">
         <div class="centered" style="width: 100%;">
-            <h1 style="text-align:center;font-size:65px">Hobbies</h1>
+            <h1 style="font-size:65px">Hobbies</h1>
 
-            <div class="contact">
+            <div class="row centered">
                 {% for i in range(hobbies|length) %}
-                    <img class="contactPic" src="../static/img/{{ hobbies[i]['image'] }}"  style="margin-right:30px;margin-bottom:30px;height:250px">
+                    <div style="width:20px"></div>
+                    <div class="col-lg-4 col-md-4 col-xs-4 thumb img-hover-zoom">
+                            <img class="img-responsive hobbies" src="../static/img/{{ hobbies[i]['image'] }}" alt="">
+                    </div>
+                    <div style="width:20px"></div>
                 {% endfor %}
             </div>
     
