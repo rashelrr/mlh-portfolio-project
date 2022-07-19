@@ -39,19 +39,19 @@
 
     <script src="../static/scripts/sidebar.js"></script>
 
-    <div id="about" class="parent section" style="height:500px;">
+
+    <div id="about" class="parent section parallax" style="height:97%;">
         <div class="centered vertical-middle" style="width: 60%; text-align: left;">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
             <div>
-                <h1>About Me</h1>
+                <h1 style="font-size:70px">About Me</h1>
                 <p style="font-size:20px">{{about}}</p>
             </div>
-        </div>
+        </div>  
     </div>
 
-    <div class="parallax"></div>
 
-    <div id="education" class="parent section">
+    <div id="education" class="parent section parallax">
         <h1 style="text-align:center;">Education</h1>
         <div class="timeline" style="width: 60%;">
             {% for i in range(education|length) %}
@@ -74,9 +74,7 @@
         </div>
     </div>
 
-    <div class="parallax"></div>
-
-    <div id="experience" class="parent section">
+    <div id="experience" class="parent section parallax">
         <h1 style="text-align:center;">Experience</h1>
         <div class="timeline" style="width: 70%;">
             {% for i in range(experiences|length) %}
@@ -111,19 +109,15 @@
         </div>
     </div>
 
-    <div class="parallax"></div>
-
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
 
-    <div id="map" class="parent section">
+    <div id="map" class="parent section parallax">
         <h1 style="text-align:center">Places I've Visited</h1>
         <div id="maparea"></div>
     </div>
-
-    <div class="parallax" style="height: 20%;"></div>
 
     <script>
         var map = L.map('maparea').setView([51.505, -0.09], 13);

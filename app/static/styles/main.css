@@ -13,7 +13,6 @@ body {
 }
 
 .section {
-    background-color:#2E0249;
     overflow:auto;
     height: auto;
     padding-top:50px;
@@ -46,13 +45,8 @@ body, html {
 }
 
 .parallax {
-    /* The image used */
     background-image: url('../img/background.jpeg');
-
-    /* Full height */
-    height: 40%; 
-
-    /* Create the parallax scrolling effect */
+    height: 100%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -286,7 +280,7 @@ img {
 }
 
 .rounded-img {
-    width: 350px;
+    width: 300px;
     border-radius: 200px;
     margin: 0 50px 0 0;
 }
