@@ -65,15 +65,18 @@
     "hobbies" : [
         {
             "image" : "bellydance.png",
-            "hobby" : "Bellydance"
+            "hobby" : "Bellydance",
+            "caption": "I'm on my university's bellydancing troupe, CU Raqs! We host a variety of classes and host our own annual spring show where we're joined by several other dance groups."
         },
         {
             "image" : "gym.jpg",
-            "hobby" : "Working Out"
+            "hobby" : "Working Out",
+            "caption": "I enjoy strength training. My goal is to be able to do 10 pull ups one day :)"
         },
         {
             "image" : "coding.jpeg",
-            "hobby" : "Coding"
+            "hobby" : "Coding",
+            "caption": "I'm always looking for new projects to work on. Currently, I'm helping a friend develop an iOS music app."
         }
     ]
 }
