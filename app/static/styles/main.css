@@ -530,3 +530,9 @@ img {
   .sidenav a {font-size: 18px;}
 }
   
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+}  

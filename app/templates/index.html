@@ -39,43 +39,54 @@
 
     <script src="../static/scripts/sidebar.js"></script>
 
-
     <div id="about" class="parent section parallax" style="height:97%;">
         <div class="centered vertical-middle" style="width: 60%; text-align: left;">
             <img align="left" class="rounded-img" src="../static/img/self_pic.JPG">
             <div>
                 <h1 style="font-size:70px">About Me</h1>
-                <p style="font-size:20px">{{about}}</p>
+                <p style="font-size:22px">{{about}}</p>
             </div>
         </div>  
     </div>
-
+    
+    
 
     <div id="education" class="parent section parallax">
-        <h1 style="text-align:center;">Education</h1>
-        <div class="timeline" style="width: 60%;">
-            {% for i in range(education|length) %}
-                {% if i % 2 == 0 %}
-                <div class="container left">
-                    <div class="content">
-                        <h2 style="color:black;">{{education[i]["name"]}}</h2>
-                        <p style="color:black;"> <i>{{education[i]["type"]}}</i> <br> {{education[i]["duration"]}} <br> {{education[i]["gpa"]}}</p>
+        <div class="centered" style="width: 60%;">
+            <h1 style="text-align:center;font-size:70px">Education</h1>
+            <div class="row">
+
+                {% for i in range(education|length) %}
+                    {% if i % 2 == 0 %}
+                    <div class="col" style="margin-right: 50px">
+                        <a href="https://www.bxscience.edu/"><img src="../static/img/bronx_science.png" style="width:150px"></a>
+                        <p style="font-size:20px">
+                            <b style="font-size:25px">{{education[i]["name"]}}</b> <br> 
+                            Years {{education[i]["duration"]}} <br> 
+                            GPA: {{education[i]["gpa"]}} <br>
+                            Relevant Classes: {{education[i]["classes"]}}
+                        </p>
                     </div>
-                </div>
-                {% else %}
-                <div class="container right">
-                    <div class="content">
-                        <h2 style="color:black;">{{education[i]["name"]}}</h2>
-                        <p style="color:black;"> <i>{{education[i]["type"]}}</i> <br> {{education[i]["duration"]}} <br> {{education[i]["gpa"]}}</p>
+                    {% else %}
+                    <div class="col raw" style="margin-left: 50px">
+                        <a href="https://www.columbia.edu/"><img src="../static/img/columbia.png" style="width:170px"></a>
+                        <br><br>
+                        <p style="font-size:20px">
+                            <b style="font-size:25px">{{education[i]["name"]}}</b> <br> 
+                            Years {{education[i]["duration"]}} <br> 
+                            GPA: {{education[i]["gpa"]}} <br>
+                            Relevant Classes: {{education[i]["classes"]}}
+                        </p>
                     </div>
-                </div>
-                {% endif %}
-            {% endfor %}
+                    {% endif %}
+                {% endfor %}
+
+            </div>
         </div>
     </div>
 
     <div id="experience" class="parent section parallax">
-        <h1 style="text-align:center;">Experience</h1>
+        <h1 style="text-align:center;font-size:70px">Experience</h1>
         <div class="timeline" style="width: 70%;">
             {% for i in range(experiences|length) %}
                 {% if i % 2 == 0 %}
@@ -115,7 +126,7 @@
     crossorigin=""></script>
 
     <div id="map" class="parent section parallax">
-        <h1 style="text-align:center">Places I've Visited</h1>
+        <h1 style="text-align:center;font-size:70px">Places I've Visited</h1>
         <div id="maparea"></div>
     </div>
 
