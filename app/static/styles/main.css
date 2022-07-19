@@ -1,4 +1,4 @@
-p, h1, h2, h3, h4, h5, h6, ul, li, button {
+p, h1, h2, h3, h4, h5, h6, ul, li, button, label {
     font-family: Helvetica, sans-serif;
     color: white;
 }
@@ -301,3 +301,9 @@ img {
     }
   }
   
+.post {
+    border-radius: 25px;
+    background: #3a086f;
+    padding: 20px;
+    width: 500px;
+}

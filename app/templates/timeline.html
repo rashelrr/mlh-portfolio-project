@@ -3,15 +3,10 @@
     <meta charset="UTF-8">
     <title>{{title}}</title> 
     <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
-    <style>
-        p, h1 {
-            color: black;
-        }
-    </style>
 </head>
 <body>
-    <div style="margin:50px 50px 50px 50px;">
-        <h1>Make a Timeline Post</h1>
+    <div class="parallax" style="height: 100%; overflow:scroll;padding:50px 50px 50px 50px;letter-spacing: 1px;">
+        <h1 style="font-size:40px">Make a Timeline Post</h1>
         <form id="form">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
@@ -24,12 +19,14 @@
         </form> 
 
         <div>
-            <h1>All Timeline Posts</h1>
+            <h1 style="font-size:40px">All Timeline Posts</h1>
             {% for post in posts %} 
-                <p>Id: {{post["id"]}}</p>
-                <p>Name: {{post["name"]}}</p>
-                <p>Email: {{post["email"]}}</p>
-                <p>Content: {{post["content"]}}</p>
+                <div class="post">
+                    <p>ID: {{post["id"]}}</p>
+                    <p>Name: {{post["name"]}}</p>
+                    <p>Email: {{post["email"]}}</p>
+                    <p>Content: {{post["content"]}}</p>
+                </div>
                 <br>
             {% endfor %}
         </div>
