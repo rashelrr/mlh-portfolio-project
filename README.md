@@ -19,6 +19,11 @@ On the other hand, we have two separate pages which are connected to the portfol
 - Bootstrap
 - Jinja
 
+## Metrics (Prometheus & Grafana)
+<img width="500" alt="metrics" src="https://github.com/rashelrr/mlh-portfolio-project/assets/66976912/f66e4253-9c23-4313-a30c-eecf63bac31f">
+
+Site metrics after load testing by sending 1000 requests at a pace of 10 concurrent requests with Docker and ab (Apache Bench).
+
 ## Try it Out
 http://rashelrojasportfolio.duckdns.org:5000/
 
