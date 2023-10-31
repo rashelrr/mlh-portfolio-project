@@ -63,9 +63,8 @@ You should get a response like this in the terminal:
 
 You'll now be able to access the website at `localhost:5000` or `127.0.0.1:5000` in the browser! 
 
-## Authors
+## Author
 * Rashel Rojas
-* Carlos Seda 
 
 ## Roadmap
 - Work more with the information, for example, use a database to store all portfolio information
