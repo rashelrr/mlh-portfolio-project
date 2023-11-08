@@ -1,23 +1,31 @@
 # Production Engineering - Portfolio Site
 
-Portfolio site built in Flask. This site will be the foundation for activities we do in the whole program.
+Portfolio site built in Flask. This site uses concepts learned during the entire MLH fellowship.
 
 ## Description
 
-This portfolio has an about me, education, work experience and contact section. The about me section allows you to enter any information you wish to provide about yourself. The education section displays a timeline of recent schools or colleges you have attended. The work experience section allows you to enter the latest projects or jobs in which you have participated. The contact section is for people to take action after viewing your portfolio.
+This portfolio has an about me, education, work experience, hobbies, and places you've visited section. The 'About Me' section allows you to enter any information you wish to provide about yourself. The education section displays a timeline of recent schools or colleges you have attended. The work experience section is where you can enter the latest projects or jobs in which you have participated in. 
 
-On the other hand, we have two separate pages which are connected to the portfolio in which you can show your hobbies (including images) and the places in the world that you have visited.
+This site uses the following concepts learned during this fellowship:
+- VPS setup via DigitalOcean
+- Scripting (bash)
+- Databases
+- Unit testing
+- Containers
+- CI/CD (GitHub Actions)
+- Monitoring
 
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Technologies used in this project
 - Flask
+- Jinja
 - HTML
 - CSS
 - Javascript
-- Bootstrap
-- Jinja
+- MySQL
+- Docker
 
 ## Metrics (Prometheus & Grafana)
 <img width="500" alt="metrics" src="https://github.com/rashelrr/mlh-portfolio-project/assets/66976912/f66e4253-9c23-4313-a30c-eecf63bac31f">
