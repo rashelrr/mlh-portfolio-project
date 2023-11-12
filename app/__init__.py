@@ -9,7 +9,7 @@ import re
 x = Flask(__name__)
 x.register_blueprint(views)
 
-if os.getenv("TESTING") == "true":
+'''if os.getenv("TESTING") == "true":
     print("Running in test mode")
     mydb = SqliteDatabase('file:memory?mode=memory&cache=shared', 
     uri=True)
@@ -19,7 +19,7 @@ else:
             password=os.getenv("MYSQL_PASSWORD"),
             host=os.getenv("MYSQL_HOST"),
             port=3306
-        )
+        )'''
 
 class TimelinePost(Model):
     name = CharField()
@@ -30,7 +30,7 @@ class TimelinePost(Model):
     class Meta:
         database = mydb
 
-mydb.connect()
+'''mydb.connect()
 mydb.create_tables([TimelinePost])
 
 print(mydb)
@@ -81,4 +81,4 @@ def timeline():
     posts = [model_to_dict(p) for p in TimelinePost.select().order_by(TimelinePost.
     created_at.desc())]
     return render_template('timeline.html', title="Timeline", posts=posts,
-        url=os.getenv("URL"))
+        url=os.getenv("URL"))'''
