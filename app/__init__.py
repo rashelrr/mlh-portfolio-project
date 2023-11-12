@@ -19,7 +19,7 @@ else:
             password=os.getenv("MYSQL_PASSWORD"),
             host=os.getenv("MYSQL_HOST"),
             port=3306
-        )'''
+        )
 
 class TimelinePost(Model):
     name = CharField()
@@ -30,7 +30,7 @@ class TimelinePost(Model):
     class Meta:
         database = mydb
 
-'''mydb.connect()
+mydb.connect()
 mydb.create_tables([TimelinePost])
 
 print(mydb)
