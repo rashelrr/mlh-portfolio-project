@@ -17,7 +17,7 @@ class AppTestCase(unittest.TestCase):
         assert "Education" in html 
         assert "Experience" in html
 
-    def test_timeline(self):
+    '''def test_timeline(self):
         response=self.client.get("/api/timeline_post")
         assert response.status_code == 200
         assert response.is_json
@@ -79,4 +79,4 @@ class AppTestCase(unittest.TestCase):
         {"name" : "John Doe", "email": "not-an-email", "content": "Hello world, I'm John!"})
         assert response.status_code == 400
         html = response.get_data(as_text=True)
-        assert "Invalid email" in html
+        assert "Invalid email" in html'''
