@@ -33,7 +33,7 @@ This site uses the following concepts learned during this fellowship:
 Site metrics after load testing by sending 1000 requests at a pace of 10 concurrent requests with Docker and ab (Apache Bench).
 
 ## Try it Out
-http://rashelrojasportfolio.duckdns.org:5000/
+
 
 ## Installation
 
