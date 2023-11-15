@@ -11,7 +11,7 @@
         },
         {
             "name" : "Columbia University",
-            "gpa"  : "3.5",
+            "gpa"  : "3.50",
             "duration" : "2019 - 2023",
             "classes" : "Data Structures, Intro to Python, Advanced Programming in C, Intro to Databases, Analysis of Algorithms, Operating Systems"
         }
@@ -22,43 +22,53 @@
             "position"   : "Production Engineering Fellow",
             "location"   : "Remote",
             "start_date" : "May 2022",
-            "end_date"   : "August 2022",
+            "end_date"   : "Aug 2022",
             "responsibilities" : [
                 {
-                    "resp_1" : "Created a portfolio web application using Docker, Flask, Jinja, JavaScript, HTML, and CSS",
-                    "resp_2" : "Learned about various production engineering topics such as scripting, services, testing, containers, CI/CD integration, etc."
+                    "resp_1" : "Completed 12-weeks of structured curriculum-based learning covering core Production Engineering topics, supplemented with events/workshops hosted by industry experts",
+                    "resp_2" : "Created an open-source personal portfolio website template using Python, MySQL, Jinja, Flask, JavaScript, Docker, Nginx, and unittest with automated testing and deployment workflows using CI/CD",
+                    "resp_3" : "Set up system and container monitoring, alerting, and visualization using Prometheus and Grafana"
                 }
             ],
-            "project_desc" : "Click to View Portfolio Project",
+            "project_desc" : "Portfolio Project",
             "project_link" : "https://github.com/rashelrr/mlh-portfolio-project"
         },
         {
             "logo" : "goldman_sachs.png",
-            "position"   : "Technical Summer Analyst",
+            "position"   : "Engineering Summer Analyst",
+            "team"       : "Global Credit Technology Team",
+            "team2"      : "GMD Managed Data Services Team",
             "location"   : "Dallas, TX",
-            "start_date" : "June 2021",
-            "end_date"   : "August 2021",
+            "start_date" : "Jun 2021",
+            "end_date"   : "Aug 2021",
             "responsibilities" : [
                 {
                     "resp_1" : "Optimized storage system of a pre-trade analysis tool called Troodon, which generates and stores Bond Analysis Worksheets (BAWs) into a local folder used by the CLO Secondary Trading desk of 15 traders",
                     "resp_2" : "Created a Procmon script in Slang (GS proprietary language) to transfer BAWs older than 2 years from local to cloud storage in Goldman Sachs’ main cloud storage system, OBS2",
                     "resp_3" : "Successful in freeing up hundreds of gigabytes of space, which came at a crucial time considering local storage was at 90% capacity and the recent uptick in CLO trading"
                 }
+            ],
+            "responsibilities2" : [
+                {
+                    "resp_1" : "Enhanced Goldman Sachs Marquee Data APIs to provide new API parameter to allow clients to filter assets from their composite asset collections using Java, Vert.x, IntelliJ, and GitLab",
+                    "resp_2" : "Learned about financial data referencing and cross identifiers"
+                }
             ]
         },
         {
             "logo" : "redhat.png",
             "position"   : "Software Engineering Intern",
+            "team"       : "Middleware Integration Team",
             "location"   : "Boston, MA",
             "start_date" : "May 2020",
-            "end_date"   : "August 2020",
+            "end_date"   : "Aug 2020",
             "responsibilities" : [
                 {
-                    "resp_1" : "Worked under Babak Mozaffari on a team of 13 software engineers on the development of OpenShift / Kubernetes operators for Red Hat and upstream open-source products",
+                    "resp_1" : "Worked under Babak Mozaffari on a team of 13 software engineers on the development of OpenShift/Kubernetes operators for Red Hat and upstream open-source products",
                     "resp_2" : "Implemented CR/CRD validation and ConsoleLink creation for 5 operators (3scale, Teiid, Apicurio, Hawtio, Syndesis) using Go and verified operator deployment via the OpenShift Container Platform"
                 }
             ],
-            "project_desc" : "Click to View Apicurio Operator Project",
+            "project_desc" : "Apicurio Operator Project",
             "project_link" : "https://github.com/Apicurio/apicurio-operators"
         }
     ],

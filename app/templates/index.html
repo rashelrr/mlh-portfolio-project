@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <div id="experience" class="parent section parallax" style="height: 200%;">
+    <div id="experience" class="parent section parallax" style="height: 250%;">
         <div class="centered" style="width: 35%;">
             <h1 style="font-size:65px;padding-top: 200px; padding-bottom: 40px;">Experience</h1>
 
@@ -95,12 +95,35 @@
                         {{experiences[i]["location"]}} <br> 
                         {{experiences[i]["start_date"]}} - {{experiences[i]["end_date"]}} <br>
                     </p>
+                    <p><b>
+                        {% if experiences[i]["team"]|length %}
+                        {{experiences[i]["team"]}}<br> 
+                        {% endif %}
+                    </b></p>
                     {% set lst_resp = experiences[i]["responsibilities"][0] %}
                     <ul style="text-align:left">
                         {% for key, value in lst_resp.items() %}
                             <li>{{value}}</li>
                         {% endfor %}
                     </ul>
+                    
+                    <p><b>
+                        {% if experiences[i]["team2"]|length %}
+                        {{experiences[i]["team2"]}}<br> 
+                        {% endif %}
+                    </b></p>
+
+                    <!--second team (if present)-->
+                    {% if experiences[i]["responsibilities2"]|length %}
+                    {% set resp2 = experiences[i]["responsibilities2"][0] %}
+                    <ul style="text-align:left">
+                        {% for key, value in resp2.items() %}
+                            <li>{{value}}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    
+                    <!--project links (if present)-->
                     <p>
                         {% if experiences[i]["project_link"]|length %}
                         <a href="{{experiences[i]['project_link']}}">{{experiences[i]["project_desc"]}}</a>
