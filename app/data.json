@@ -74,19 +74,19 @@
     ],
     "hobbies" : [
         {
-            "image" : "bellydance.png",
-            "hobby" : "Bellydance",
-            "caption": "I'm on my university's bellydancing troupe, CU Raqs! We host a variety of classes throughout the semester and host our own annual spring show where we're joined by several other dance groups."
-        },
-        {
-            "image" : "gym.jpg",
-            "hobby" : "Working Out",
-            "caption": "I enjoy strength training. My goal is to be able to do 10 pull ups one day :)"
-        },
-        {
             "image" : "coding.jpeg",
             "hobby" : "Coding",
-            "caption": "I'm always looking for new projects to work on. Currently, I'm helping a friend develop an iOS music collaboration app."
+            "caption": "I'm always looking for new projects to work on. Currently, I'm working on this website."
+        },
+        {
+            "image" : "salsa.jpg",
+            "hobby" : "Salsa Dancing",
+            "caption": "I've always loved salsa and so this summer, I decided to take some salsa classes in my neighborhood and continue to practice at Salsa clubs!"
+        },
+        {
+            "image" : "gym.jpeg",
+            "hobby" : "Working Out",
+            "caption": "I enjoy strength training. Currently, I can squat 100lbs - my goal is to squat my own body weight."
         }
     ]
 }
