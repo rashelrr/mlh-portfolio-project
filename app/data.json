@@ -74,7 +74,7 @@
     ],
     "hobbies" : [
         {
-            "image" : "coding.jpeg",
+            "image" : "code.gif",
             "hobby" : "Coding",
             "caption": "I'm always looking for new projects to work on. Currently, I'm working on this website."
         },
